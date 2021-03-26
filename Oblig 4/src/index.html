@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./assets/styles.css"/>
+        <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+    </head>
+
+    <body>
+
+        <!--Start-->
+        <div id="app">
+            <calculator @new-entry="addEntry"></calculator>
+            <logg
+            :entries="entries"
+            ></logg>
+        </div>
+        <!-- End -->
+
+        <script src="./main.js"></script>
+        <script src="./components/Buttons.js"></script>
+        <script src="./components/Display.js"></script>
+        <script src="./components/Calculator.js"></script>
+        <script src="./components/Logg.js"></script>
+        <script>
+            const mountedApp = app.mount('#app') 
+        </script>
+    </body>
+</html>
